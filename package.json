@@ -1,0 +1,31 @@
+{
+  "name": "markcss",
+  "version": "0.1.0",
+  "description": "A markdown theme",
+  "main": "dist/mark.css",
+  "style": "dist/mark.css",
+  "scripts": {
+    "test": "node test/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqrthree/markcss.git"
+  },
+  "keywords": [],
+  "author": "sqrtthree <imsqrtthree@gmail.com> (https://github.com/sqrthree)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sqrthree/markcss/issues"
+  },
+  "homepage": "https://github.com/sqrthree/markcss#readme",
+  "devDependencies": {
+    "ejs": "~3.1.6",
+    "express": "~4.17.3",
+    "postcss": "~8.4.12",
+    "postcss-cli": "~9.1.0",
+    "remark-gfm": "~3.0.1",
+    "remark-html": "~15.0.1",
+    "remark-parse": "~10.0.1",
+    "unified": "~10.1.2"
+  }
+}

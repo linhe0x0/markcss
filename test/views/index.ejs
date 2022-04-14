@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>markcss</title>
+  <link rel="stylesheet" href="/mark<%= theme ? '-' + theme : '' %>.css">
+  <style>
+    body {
+      margin: 0;
+    }
+    .nav {
+      padding: 8px 0;
+      text-align: center;
+      background-color: #fb923c;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 0 8px;
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.reload()
+    }, 1000)
+  </script>
+</head>
+<body>
+  <div class="nav">
+    <a href="/">Auto</a>
+    <a href="/?theme=light">Light</a>
+    <a href="/?theme=dark">Dark</a>
+  </div>
+  <%- body %>
+</body>
+</html>
