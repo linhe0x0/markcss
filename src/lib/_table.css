@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  border: 1px solid;
+  border-spacing: 0;
+  border-radius: 4px;
+}
+table tr:last-child {
+  border-bottom-left-radius: 4px;
+}
+table th,
+table td {
+  padding: 0.5rem 0.5rem;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+table thead tr:first-child th:first-child {
+  border-top-left-radius: 4px;
+}
+table thead tr:first-child th:last-child {
+  border-top-right-radius: 4px;
+}
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+table th:last-child,
+table td:last-child {
+  border-right: none;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 4px;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+table th {
+  font-weight: 500;
+}

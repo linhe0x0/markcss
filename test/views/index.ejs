@@ -7,10 +7,15 @@
   <title>markcss</title>
   <link rel="stylesheet" href="/mark<%= theme ? '-' + theme : '' %>.css">
   <style>
-    body {
-      margin: 0;
+    .nav-box {
+      height: 40px;
     }
     .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
       padding: 8px 0;
       text-align: center;
       background-color: #fb923c;
@@ -21,16 +26,16 @@
     }
   </style>
   <script>
-    setTimeout(() => {
-      window.location.reload()
-    }, 1000)
+    // setTimeout(() => window.location.reload(), 1000)
   </script>
 </head>
 <body>
-  <div class="nav">
-    <a href="/">Auto</a>
-    <a href="/?theme=light">Light</a>
-    <a href="/?theme=dark">Dark</a>
+  <div class="nav-box">
+    <div class="nav">
+      <a href="/">Auto</a>
+      <a href="/?theme=light">Light</a>
+      <a href="/?theme=dark">Dark</a>
+    </div>
   </div>
   <%- body %>
 </body>

@@ -1,0 +1,14 @@
+@import './lib/_variables.css';
+
+@import './lib/_typography.css';
+@import './lib/_media.css';
+@import './lib/_list.css';
+@import './lib/_table.css';
+@import './lib/_theme-light.css';
+
+.markdown-body {
+  font-size: var(--mark-font-size-base);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: var(--mark-general-font-feature-settings);
+  line-height: 1.5;
+}

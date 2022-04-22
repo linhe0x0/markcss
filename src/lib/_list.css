@@ -1,0 +1,11 @@
+ol,
+ul {
+  padding-left: 2rem;
+}
+li {
+  margin: 0.25rem 0;
+}
+
+li p {
+  margin: 0;
+}

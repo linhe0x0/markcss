@@ -1,0 +1,99 @@
+body {
+  background-color: var(--mark-body-dark-color);
+}
+
+/* heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--mark-primary-dark-color);
+}
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: var(--mark-heading-dark-color);
+  }
+}
+
+/* paragraph */
+div,
+p {
+  color: var(--mark-text-dark-color);
+}
+
+div strong,
+p strong {
+  color: var(--mark-primary-dark-color);
+}
+
+/* code */
+p code {
+  color: var(--mark-inline-code-dark-color);
+  background-color: var(--mark-secondary-dark-color);
+}
+pre {
+  color: var(--mark-block-code-dark-color);
+  background-color: var(--mark-block-code-bg-dark-color);
+}
+pre:before {
+  background-color: var(--mark-block-code-header-bg-dark-color);
+}
+pre code {
+  color: var(--mark-block-code-dark-color);
+}
+
+/* quote */
+blockquote,
+.blockquote {
+  border-color: var(--mark-secondary-dark-color);
+  background-color: var(--mark-bg-dark-color);
+}
+
+/* link */
+a {
+  color: var(--mark-primary-dark-color);
+}
+
+/* list */
+li {
+  color: var(--mark-text-dark-color);
+}
+
+/* tables */
+table {
+  border-color: var(--mark-divider-dark-color);
+}
+table tr:hover {
+  background-color: var(--mark-table-bg-hover-dark-color);
+}
+table th {
+  background-color: var(--mark-table-header-dark-color);
+}
+table th,
+table td {
+  color: var(--mark-text-dark-color);
+}
+
+/* divider */
+hr {
+  border-color: var(--mark-divider-dark-color);
+}

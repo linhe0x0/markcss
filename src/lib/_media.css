@@ -1,0 +1,12 @@
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+@media (max-width: 786px) {
+  img {
+    width: 100%;
+  }
+}

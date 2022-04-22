@@ -1,0 +1,104 @@
+::selection {
+  color: var(--mark-light-color);
+  background-color: var(--mark-primary-light-color);
+}
+
+body {
+  background-color: var(--mark-body-light-color);
+}
+
+/* heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--mark-primary-light-color);
+}
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: var(--mark-heading-light-color);
+  }
+}
+
+/* paragraph */
+div,
+p {
+  color: var(--mark-text-light-color);
+}
+
+div strong,
+p strong {
+  color: var(--mark-primary-light-color);
+}
+
+/* code */
+p code {
+  color: var(--mark-inline-code-light-color);
+  background-color: var(--mark-secondary-light-color);
+}
+pre {
+  color: var(--mark-block-code-light-color);
+  background-color: var(--mark-block-code-bg-light-color);
+}
+pre:before {
+  background-color: var(--mark-block-code-header-bg-light-color);
+}
+pre code {
+  color: var(--mark-block-code-light-color);
+}
+
+/* quote */
+blockquote,
+.blockquote {
+  border-color: var(--mark-secondary-light-color);
+  background-color: var(--mark-bg-light-color);
+}
+
+/* link */
+a {
+  color: var(--mark-primary-light-color);
+}
+
+/* list */
+li {
+  color: var(--mark-text-light-color);
+}
+
+/* tables */
+table {
+  border-color: var(--mark-divider-light-color);
+}
+table tr:hover {
+  background-color: var(--mark-table-bg-hover-light-color);
+}
+table th {
+  background-color: var(--mark-table-header-light-color);
+}
+table th,
+table td {
+  color: var(--mark-text-light-color);
+}
+
+/* divider */
+hr {
+  border-color: var(--mark-divider-light-color);
+}

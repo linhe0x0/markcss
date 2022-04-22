@@ -1,4 +1,4 @@
-@import './mark-light.css';
+@import './github-markdown-light.css';
 
 @media (prefers-color-scheme: dark) {
   @import './lib/_theme-dark.css';

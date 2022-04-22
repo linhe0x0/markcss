@@ -5,6 +5,8 @@
   "main": "dist/mark.css",
   "style": "dist/mark.css",
   "scripts": {
+    "dev": "postcss src/*.css --base src --dir dist -w --verbose",
+    "build": "postcss src/*.css --base src --dir dist --no-map",
     "test": "node test/index.mjs"
   },
   "repository": {
@@ -23,6 +25,8 @@
     "express": "~4.17.3",
     "postcss": "~8.4.12",
     "postcss-cli": "~9.1.0",
+    "postcss-import": "~14.1.0",
+    "postcss-nested-import": "~0.2.0",
     "remark-gfm": "~3.0.1",
     "remark-html": "~15.0.1",
     "remark-parse": "~10.0.1",
