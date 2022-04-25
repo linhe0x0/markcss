@@ -25,9 +25,9 @@
   --mark-text-light-color: #1a1a1a;
   --mark-bg-light-color: #f1f5f9;
   --mark-inline-code-light-color: #fff;
-  --mark-block-code-light-color: #1a1a1a;
-  --mark-block-code-header-bg-light-color: #cbd5e1;
-  --mark-block-code-bg-light-color: #f1f5f9;
+  --mark-block-code-light-color: #cbd5e1;
+  --mark-block-code-header-bg-light-color: #1e293b;
+  --mark-block-code-bg-light-color: #0f172a;
   --mark-table-header-light-color: #f1f5f9;
   --mark-table-bg-hover-light-color: #f1f5f9;
   --mark-divider-light-color: #d1d5db;
@@ -36,11 +36,11 @@
   --mark-dark-color: #1a1a1a;
   --mark-body-dark-color: #111827;
   --mark-primary-dark-color: #3b82f6;
-  --mark-secondary-dark-color: #60a5fa;
-  --mark-heading-dark-color: #fff;
-  --mark-text-dark-color: #e5e7eb;
+  --mark-secondary-dark-color: #1e3a8a;
+  --mark-heading-dark-color: #cbd5e1;
+  --mark-text-dark-color: #94a3b8;
   --mark-bg-dark-color: #1f2937;
-  --mark-inline-code-dark-color: #f5f5f5;
+  --mark-inline-code-dark-color: #cbd5e1;
   --mark-block-code-dark-color: #e5e7eb;
   --mark-block-code-header-bg-dark-color: #334155;
   --mark-block-code-bg-dark-color: #1f2937;

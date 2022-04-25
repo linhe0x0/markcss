@@ -5,4 +5,9 @@
 @import './lib/_media.css';
 @import './lib/_list.css';
 @import './lib/_table.css';
+@import './lib/_anchor.css';
 @import './lib/_theme-dark.css';
+
+body {
+  background-color: var(--mark-body-dark-color);
+}

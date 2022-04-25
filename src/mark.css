@@ -1,5 +1,21 @@
-@import './mark-light.css';
+@import './lib/_variables.css';
+
+@import './lib/_body.css';
+@import './lib/_typography.css';
+@import './lib/_media.css';
+@import './lib/_list.css';
+@import './lib/_table.css';
+@import './lib/_anchor.css';
+@import './lib/_theme-light.css';
+
+body {
+  background-color: var(--mark-body-light-color);
+}
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--mark-body-dark-color);
+  }
+
   @import './lib/_theme-dark.css';
 }

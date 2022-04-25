@@ -90,6 +90,12 @@ And task lists.
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete 🎉
 
+Quoting list:
+
+> - list item
+> - list item
+> - list item
+
 #### Tables
 
 | foo | bar |

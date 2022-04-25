@@ -2,11 +2,11 @@
   "name": "markcss",
   "version": "0.1.0",
   "description": "A markdown theme",
-  "main": "dist/mark.css",
-  "style": "dist/mark.css",
+  "main": "dist/github-markdown.css",
+  "style": "dist/github-markdown.css",
   "scripts": {
     "dev": "postcss src/*.css --base src --dir dist -w --verbose",
-    "build": "postcss src/*.css --base src --dir dist --no-map",
+    "build": "rm -r dist && postcss src/*.css --base src --dir dist --no-map",
     "test": "node test/index.mjs"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "postcss": "~8.4.12",
     "postcss-cli": "~9.1.0",
     "postcss-import": "~14.1.0",
+    "postcss-nested": "~5.0.6",
     "postcss-nested-import": "~0.2.0",
     "remark-gfm": "~3.0.1",
     "remark-html": "~15.0.1",

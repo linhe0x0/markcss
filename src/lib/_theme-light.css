@@ -3,10 +3,6 @@
   background-color: var(--mark-primary-light-color);
 }
 
-body {
-  background-color: var(--mark-body-light-color);
-}
-
 /* heading */
 h1,
 h2,

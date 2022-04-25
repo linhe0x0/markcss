@@ -1,7 +1,33 @@
 ol,
 ul {
-  padding-left: 2rem;
+  margin: 1rem 0;
+  padding: 0 2rem;
 }
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+blockquote ul,
+blockquote ol,
+.blockquote ul,
+.blockquote ol {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+blockquote > ul,
+.blockquote > ul {
+  list-style: disc;
+}
+blockquote > ol,
+.blockquote > ol {
+  list-style: decimal;
+}
+
 li {
   margin: 0.25rem 0;
 }
