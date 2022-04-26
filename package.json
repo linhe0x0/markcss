@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "postcss src/*.css --base src --dir dist -w --verbose",
     "build": "rm -r dist && postcss src/*.css --base src --dir dist --no-map",
-    "test": "node test/index.mjs"
+    "test": "node test/index.mjs",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
