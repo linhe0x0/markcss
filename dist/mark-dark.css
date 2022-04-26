@@ -1,0 +1,525 @@
+:root {
+  /* font size */
+  --mark-font-size-small: 12px;
+  --mark-font-size-base: 14px;
+  --mark-font-size-large: 16px;
+
+  /* font face configs */
+  --mark-cjk-font: 'Chinese Quote', 'Source Han Sans SC', '思源黑体 CN',
+    '思源黑体';
+  --mark-mono-font: 'Fira Code', Monaco, monospace;
+  --mark-fallback-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --mark-heading-font: var(--mark-cjk-font), var(--mark-fallback-font);
+  --mark-text-font: var(--mark-cjk-font), var(--mark-fallback-font);
+  --mark-general-font-feature-settings: 'calt', 'ccmp', 'kern', 'salt' 0;
+
+  /* colors:light */
+  --mark-light-color: #fff;
+  --mark-body-light-color: #fff;
+  --mark-primary-light-color: #3b82f6;
+  --mark-secondary-light-color: #60a5fa;
+  --mark-heading-light-color: #000;
+  --mark-text-light-color: #1a1a1a;
+  --mark-bg-light-color: #f1f5f9;
+  --mark-inline-code-light-color: #fff;
+  --mark-block-code-light-color: #cbd5e1;
+  --mark-block-code-header-bg-light-color: #1e293b;
+  --mark-block-code-bg-light-color: #0f172a;
+  --mark-table-header-light-color: #f1f5f9;
+  --mark-table-bg-hover-light-color: #f1f5f9;
+  --mark-divider-light-color: #d1d5db;
+
+  /* colors:dark*/
+  --mark-dark-color: #1a1a1a;
+  --mark-body-dark-color: #111827;
+  --mark-primary-dark-color: #3b82f6;
+  --mark-secondary-dark-color: #1e3a8a;
+  --mark-heading-dark-color: #cbd5e1;
+  --mark-text-dark-color: #94a3b8;
+  --mark-bg-dark-color: #1f2937;
+  --mark-inline-code-dark-color: #cbd5e1;
+  --mark-block-code-dark-color: #e5e7eb;
+  --mark-block-code-header-bg-dark-color: #334155;
+  --mark-block-code-bg-dark-color: #1f2937;
+  --mark-table-header-dark-color: #334155;
+  --mark-table-bg-hover-dark-color: #1e2937;
+  --mark-divider-dark-color: #1f2937;
+}
+
+/* body */
+
+html {
+  font-size: var(--mark-font-size-base);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: var(--mark-font-size-lg);
+  }
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0 14px;
+  box-sizing: border-box;
+  font-family: var(--mark-text-font);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: var(--mark-general-font-feature-settings);
+  line-height: 1.5;
+}
+
+@media (min-width: 576px) {
+  body {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+/* heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0.875em;
+  margin-bottom: 0.5em;
+  font-family: var(--mark-heading-font);
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center;
+  cursor: text;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.625rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+/* paragraph */
+
+p {
+  margin: 0.75rem 0;
+  font-family: var(--mark-text-font);
+  font-size: 1rem;
+  line-height: 1.875;
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+div strong,
+p strong {
+  font-size: 500;
+}
+
+/* code */
+
+code {
+  font-family: var(--mark-mono-font);
+}
+
+p code,
+blockquote code {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0 4px;
+  margin-top: -2px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  vertical-align: middle;
+}
+
+pre {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  padding-top: 3.5rem;
+  border-radius: 4px;
+}
+
+pre:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2.5rem;
+  content: attr(rel);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+pre:after {
+  position: absolute;
+  top: 0.875rem;
+  left: 1.125rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  content: '';
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  border-radius: 0.875rem;
+  background: #fc625d;
+}
+
+pre code {
+  display: inline-block;
+  max-width: 100%;
+  overflow: auto;
+}
+
+/* quote */
+
+blockquote,
+.blockquote {
+  display: block;
+  padding: 0 1.25rem;
+  border-left: 0.375rem solid;
+  margin: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* link */
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* divider */
+
+hr {
+  display: block;
+  border: 3px solid;
+  margin: 2rem 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+@media (max-width: 786px) {
+  img {
+    width: 100%;
+  }
+}
+
+ol,
+ul {
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+blockquote ul,
+blockquote ol,
+.blockquote ul,
+.blockquote ol {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+blockquote > ul,
+.blockquote > ul {
+  list-style: disc;
+}
+
+blockquote > ol,
+.blockquote > ol {
+  list-style: decimal;
+}
+
+li {
+  margin: 0.25rem 0;
+}
+
+li p {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border: 1px solid;
+  border-spacing: 0;
+  border-radius: 4px;
+}
+
+table tr:last-child {
+  border-bottom-left-radius: 4px;
+}
+
+table th,
+table td {
+  padding: 0.5rem 0.5rem;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: inherit;
+}
+
+table thead tr:first-child th:first-child {
+  border-top-left-radius: 4px;
+}
+
+table thead tr:first-child th:last-child {
+  border-top-right-radius: 4px;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table th:last-child,
+table td:last-child {
+  border-right: none;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+table th {
+  font-weight: 500;
+}
+
+.anchor.before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 4px;
+  transform: translateX(-100%);
+}
+
+/* heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--mark-primary-dark-color);
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: var(--mark-heading-dark-color);
+  }
+}
+
+/* paragraph */
+
+div,
+p {
+  color: var(--mark-text-dark-color);
+}
+
+div strong,
+p strong {
+  color: var(--mark-primary-dark-color);
+}
+
+/* code */
+
+p code {
+  color: var(--mark-inline-code-dark-color);
+  background-color: var(--mark-secondary-dark-color);
+}
+
+pre {
+  color: var(--mark-block-code-dark-color);
+  background-color: var(--mark-block-code-bg-dark-color);
+}
+
+pre:before {
+  background-color: var(--mark-block-code-header-bg-dark-color);
+}
+
+pre code {
+  color: var(--mark-block-code-dark-color);
+}
+
+/* quote */
+
+blockquote,
+.blockquote {
+  border-color: var(--mark-secondary-dark-color);
+  background-color: var(--mark-bg-dark-color);
+}
+
+/* link */
+
+a {
+  color: var(--mark-primary-dark-color);
+}
+
+/* list */
+
+li {
+  color: var(--mark-text-dark-color);
+}
+
+/* tables */
+
+table {
+  border-color: var(--mark-divider-dark-color);
+}
+
+table tr:hover {
+  background-color: var(--mark-table-bg-hover-dark-color);
+}
+
+table th {
+  background-color: var(--mark-table-header-dark-color);
+}
+
+table th,
+table td {
+  color: var(--mark-text-dark-color);
+}
+
+/* divider */
+
+hr {
+  border-color: var(--mark-divider-dark-color);
+}
+
+body {
+  background-color: var(--mark-body-dark-color);
+}

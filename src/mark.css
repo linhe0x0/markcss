@@ -19,3 +19,11 @@ body {
 
   @import './lib/_theme-dark.css';
 }
+
+.light {
+  @import './lib/_theme-light.css';
+}
+
+.dark {
+  @import './lib/_theme-dark.css';
+}
